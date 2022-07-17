@@ -30,3 +30,4 @@ I had some issues when trying to make this work, they were mainly my fault but I
 - Make sure the imports you use end with `.js` (even if they are `.ts`). Note the file extension of imports in `index.ts` .
 
   With `"moduleResolution":"NodeNext"` in `tsconfig.json` the import should autocomplete properly when using vscode's auto-import suggestion
+- `baseUrl` from `ts-config` is not working with ts-node + esm , so import should be all relative when using this configuration 
